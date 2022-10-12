@@ -42,6 +42,6 @@ def launch(links: [], phone, fio,street, house, comment):
     element.send_keys(comment)
 
     # END Send order
-    # element = driver.find_element(By.NAME, 'toOrder')
-    # driver.execute_script("arguments[0].click();", element)
+    element = driver.find_element(By.NAME, 'toOrder')
+    driver.execute_script("arguments[0].click();", element)
     driver.quit()
